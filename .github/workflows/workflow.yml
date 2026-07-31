@@ -37,11 +37,8 @@ jobs:
 
       - name: Coverage report
         run: |
-          pytest  -v --cov-report=xml --cov=.
-
-      - name: Display coverage report
-        run: |
-          pytest  -v --cov-report=term-missing --cov=.
+          coverage run manage.py test
+          coverage report
 
       - name: Check Code Style
         run: |
