@@ -42,10 +42,12 @@ jobs:
 
       - name: Check Code Style
         run: |
+          cd ../
           flake8 .
 
       - name: Check Complexity of Code
         run: |
+          cd ../
           flake8 . --exit-zero --max-complexity=10 --statistics
 
       - name: Upload Python Code Artifact
