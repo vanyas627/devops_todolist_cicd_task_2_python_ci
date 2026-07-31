@@ -2,7 +2,7 @@ name: python-deployment
 run-name: ${{github.actor}}-${{github.sha}}
 
 env:
-  PYTHON_VERSION: 3.10
+  PYTHON_VERSION: '3.10'
 
 on:
   push:
