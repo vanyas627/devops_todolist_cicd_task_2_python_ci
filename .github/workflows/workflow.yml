@@ -33,7 +33,7 @@ jobs:
 
       - name: Run Tests
         run: |
-          pytest
+          python manage.py test
 
       - name: Coverage report
         run: |
